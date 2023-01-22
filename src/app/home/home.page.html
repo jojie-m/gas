@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      My Gas Map
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,12 +9,18 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">My Gas Map</ion-title>
     </ion-toolbar>
   </ion-header>
+  <ion-toolbar>
+  <div #map id="map"></div>
+</ion-toolbar>
+  <button id = "call"> call delivery guy</button>
+  <div align = "center">
+  or
+  <button id = "message"> text delivery guy</button>
+  <p>here is your ticket:</p></div>
+  <div class="ticket">
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
   </div>
 </ion-content>

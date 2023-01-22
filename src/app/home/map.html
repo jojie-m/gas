@@ -1,0 +1,18 @@
+
+  //setting the variable where the map will be centered
+
+  let center = [4,44.4] //random location
+  // giving the map instance
+  const map = tt.map({
+    //setting parameteres
+    key:"",
+    container: "map",
+    center: center,
+    zoom: 6
+
+  })
+  //adding a marker
+  map.on('load', ()=>{
+    //tomtom markers
+    new tt.Marker().setLngLat(center).addTo(map)
+  })
